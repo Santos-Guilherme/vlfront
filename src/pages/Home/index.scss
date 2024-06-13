@@ -1,0 +1,156 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #212121;
+    color: #fff;
+
+    p {
+        font-size: 27px;
+    }
+
+    .secao1 {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            text-shadow: 2px 2px #0057FF; 
+        }
+    }
+
+    .secao2, .secao3 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        background-color: #212121;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        min-height: 45vh;
+
+        .image-container {
+            width: 50%;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+
+            img {
+                height: 450px;
+                width: 100%;
+            }
+        }
+
+        .text-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                width: 60%;
+            }
+
+            a {
+                color: #cfcece;
+                font-size: 27px;
+                margin-top: 20px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .secao4 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        gap: 30px;
+        min-height: 40vh;
+        text-align: start;
+        padding: 30px 0;
+
+        h2 {
+            margin: 0 auto;
+            margin-left: 20px;
+            font-size: 30px;
+        }
+
+        .logos-empresas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            img {
+                width: 230px;
+                height: 230px;
+            }
+        }
+    }
+
+    .secao5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        background-color: #444;
+        color: #fff;
+        padding: 30px 0;
+
+        .contact-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                margin-bottom: 20px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 15px;
+
+                input, textarea {
+                    padding: 10px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    color: #000;
+                }
+
+                button {
+                    padding: 10px 20px;
+                    font-size: 18px;
+                    background-color: #646464;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: #333;
+                    }
+                }
+            }
+        }
+    }
+}

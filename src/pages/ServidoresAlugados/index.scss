@@ -1,0 +1,63 @@
+.Servidores {
+    .content-servidores {
+        display: flex;
+    }
+
+    .info-servidores {
+        flex: 1;
+        padding: 20px;
+
+        .content-titulo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            th, td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            th {
+                background-color: #f4f4f4;
+            }
+
+            .status-indicator {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+            
+            .status-online {
+                background-color: green;
+            }
+            
+            .status-offline {
+                background-color: red;
+            }
+            
+            .status-em-manutencao {
+                background-color: yellow;
+            }
+
+            button {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+        }
+    }
+}

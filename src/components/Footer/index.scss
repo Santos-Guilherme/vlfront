@@ -1,0 +1,54 @@
+.Footer {
+    color: #fff;
+    width: 100%;
+    min-height: 30vh;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        p {
+            font-size: 15px;
+            margin: 5px 0;
+        }
+    }
+
+    .company-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        p {
+            font-size: 15px;
+            margin: 5px 0;
+        }
+    }
+}

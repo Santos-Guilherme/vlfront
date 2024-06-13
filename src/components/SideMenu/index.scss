@@ -1,0 +1,71 @@
+.SideMenu {
+    display: flex;
+    align-items: flex-start;
+    min-height: 700px;
+
+    .side-menu {
+        display: none;
+        min-height: 700px;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #212121;
+        color: white;
+
+        &.close {
+            display: none;
+
+            .SideMenu {
+                width: 30px;
+            }
+        }
+
+        &.open {
+            display: block;
+        }
+
+        h2 {
+            margin-top: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            a>li, li {
+                padding: 20px 0px;
+                padding-left: 20px;
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    background-color: #666;
+                    cursor: pointer;
+                }
+            }
+
+            .sub-menu {
+                padding-left: 20px;
+                a>li, li {
+                    padding: 10px 0px;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+
+    .menu-toggle {
+        background-color: #212121;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 20px;
+        &:hover {
+            background-color: #666;
+            cursor: pointer;
+        }
+    }
+}

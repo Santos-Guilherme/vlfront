@@ -1,0 +1,51 @@
+.Sobre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #212121;
+    color: #fff;
+
+    .secao1 {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+        background-color: #333333;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 400;
+        }
+    }
+
+    .conteudo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .paragrafo {
+            width: 60%;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+
+            &:nth-child(odd) {
+                background-color: #333333;
+            }
+
+            &:nth-child(even) {
+                background-color: #444444;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        }
+    }
+}
