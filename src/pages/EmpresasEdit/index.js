@@ -21,7 +21,7 @@ export default function EmpresasEdit({ match, history }) {
     const [logoPreview, setLogoPreview] = useState(null);
 
     useEffect(() => {
-        const fetchSegmentos = async () => {
+        const listarSegmentos = async () => {
             try {
                 const listaDeSegmentos = await listarTags();
                 setSegmentos(listaDeSegmentos);
@@ -30,7 +30,7 @@ export default function EmpresasEdit({ match, history }) {
             }
         };
 
-        const fetchEmpresa = async () => {
+        const listarEmpresas = async () => {
             try {
                 const empresa = await buscarEmpresaPorId(empresaId);
                 setForm({
@@ -46,9 +46,9 @@ export default function EmpresasEdit({ match, history }) {
             }
         };
 
-        fetchSegmentos();
+        listarSegmentos();
         if (empresaId) {
-            fetchEmpresa();
+            listarEmpresas();
         }
     }, [empresaId]);
 

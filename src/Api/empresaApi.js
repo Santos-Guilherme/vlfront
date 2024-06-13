@@ -55,7 +55,6 @@ export const atualizarLogoEmpresa = async (idEmpresa, formData) => {
     }
 };
 
-// Nova função para buscar empresa por CNPJ
 export const buscarEmpresaPorCnpj = async (cnpj) => {
     try {
         const response = await axios.get(`${API_ADDRESS}/empresas/cnpj/${cnpj}`);
@@ -65,7 +64,6 @@ export const buscarEmpresaPorCnpj = async (cnpj) => {
     }
 };
 
-// Nova função para buscar empresa por nome
 export const buscarEmpresaPorNome = async (nome) => {
     try {
         const response = await axios.get(`${API_ADDRESS}/empresas/nome/${nome}`);
@@ -84,10 +82,8 @@ export const buscarEmpresasVisiveis = async (nome) => {
     }
 };
 
-// Nova função para buscar empresa por ID da tag
 export const buscarEmpresaPorTagId = async (tagId) => {
         const response = await axios.get(`${API_ADDRESS}/empresas/tag/${tagId}`);
         console.log(response.data)
         return response.data;
-    
 };
